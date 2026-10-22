@@ -1,44 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Play My Scratch Game</title>
+  <title>Play My Scratch Project</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       background: #111827;
-      color: white;
-      text-align: center;
+      color: #f9fafb;
+      font-family: system-ui, sans-serif;
+      padding: 24px;
+      box-sizing: border-box;
     }
 
     h1 {
-      margin: 24px 0;
+      text-align: center;
     }
 
-    .game {
-      width: min(960px, 95%);
-      margin: auto;
-      aspect-ratio: 4 / 3;
+    p {
+      color: #cbd5e1;
+      text-align: center;
     }
 
     iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+      width: min(960px, 100%);
+      aspect-ratio: 4 / 3;
+      border: 0;
       border-radius: 12px;
     }
   </style>
 </head>
 <body>
-  <h1>🎮 Play My Scratch Game</h1>
+  <h1>🎮 Give It a Play</h1>
+  <p>A little project from my CS50x journey.</p>
 
-  <div class="game">
-    <iframe
-      src="https://turbowarp.org/embed?project_url=YOUR_PROJECT_URL"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <iframe
+    src="https://turbowarp.org/1061758226/embed"
+    allowtransparency="true"
+    allowfullscreen>
+  </iframe>
+
+  <p>Built with Scratch · Part of my CS50x journey</p>
 </body>
 </html>
