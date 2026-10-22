@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play My Scratch Game</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111827;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 24px 0;
+    }
+
+    .game {
+      width: min(960px, 95%);
+      margin: auto;
+      aspect-ratio: 4 / 3;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Play My Scratch Game</h1>
+
+  <div class="game">
+    <iframe
+      src="https://turbowarp.org/embed?project_url=YOUR_PROJECT_URL"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
